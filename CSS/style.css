@@ -39,6 +39,12 @@ body {
 .section {
   padding: 94px 0;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
 .header {
   border-bottom: 1px solid var(--heder-line);
 }
@@ -108,10 +114,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
-  /* padding: 32px 0; */
 }
 .contacts > li:nth-child(n + 2) {
   margin-left: 50px;
+}
+.icon-contact {
+  width: 16px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 .link-contact {
   display: block;
@@ -119,13 +130,25 @@ body {
   color: var(--second-color);
   padding: 32px 0;
 }
-.contacts .link-contact:hover,
-.contacts .link-contact:focus {
+.link-contact:hover,
+.link-contact:focus {
   color: var(--hover-color);
 }
+
+.icon-contact:hover,
+.icon-contact:focus {
+  fill: var(--hover-color);
+}
+
 .section-hero {
   background: var(--hero-background-color);
-  /* width: 1600px; */
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-background.jpg);
+
+  background-repeat: no-repeat;
+  border-style: cover;
   padding: 200px 0;
 }
 .hero-block {
