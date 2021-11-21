@@ -156,7 +156,7 @@ body {
     url(../images/hero-background.jpg);
 
   background-repeat: no-repeat;
-  border-style: cover;
+  background-size: cover;
   padding: 200px 0;
 }
 .hero-block {
