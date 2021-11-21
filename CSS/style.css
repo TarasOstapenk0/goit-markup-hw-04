@@ -119,10 +119,18 @@ body {
   margin-left: 50px;
 }
 .icon-contact {
-  width: 16px;
-  height: 12px;
+  /* width: 16px;
+  height: 12px; */
   vertical-align: middle;
   margin-right: 10px;
+}
+.mail {
+  width: 16px;
+  height: 12px;
+}
+.tell {
+  width: 10px;
+  height: 16px;
 }
 .link-contact {
   display: block;
