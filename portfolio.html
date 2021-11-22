@@ -20,14 +20,28 @@
         <a href="./index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
         <nav class="navigation">
           <ul class="list nav-list">
-            <li><a href="./index.html" class="link-nav">Студия</a></li>
-            <li><a href="./portfolio.html" class="link-nav current">Портфолио</a></li>
+            <li><a href="./index.html" class="link-nav current"> Студия</a></li>
+            <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
             <li><a href="#" class="link-nav">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li><a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link-contact">+38 096 111 11 11</a></li>
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="link-contact">
+              <svg class="icon icon-contact mail" width="16" height="12">
+                <use href="./images/sprites.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="link-contact">
+              <svg class="icon icon-contact tell" width="10px" height="16px">
+                <use href="./images/sprites.svg#icon-tell"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </div>
     </header>
@@ -119,27 +133,74 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo"
-          ><span class="footer-logo-blue">Web</span>Studio</a
-        >
-        <address class="footer-list">
-          <ul class="footer-address">
-            <li>
-              <a
-                href="https://goo.gl/maps/sKUV3N8SFqWd6LK18"
-                class="footer-address-map"
-                target="_blank"
-              >
-                г. Киев, пр-т Леси Украинки, 26</a
-              >
+      <div class="container footer-content">
+        <div class="footer-address">
+          <a href="./index.html" class="footer-logo"
+            ><span class="footer-logo-blue">Web</span>Studio</a
+          >
+          <address class="footer-list">
+            <ul class="footer-address-list">
+              <li>
+                <a
+                  href="https://goo.gl/maps/sKUV3N8SFqWd6LK18"
+                  class="footer-address-map"
+                  target="_blank"
+                >
+                  г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@example.com" class="footer-address-link">info@example.com</a>
+              </li>
+              <li><a href="tel:+380961111111" class="footer-address-link">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <h2 class="invite">присоединяйтесь</h2>
+          <ul class="list footer-icon-list">
+            <li class="footer-icon-item">
+              <a href="https://www.instagram.com/" class="footer-link">
+                <svg class="icon footer-icon">
+                  <use
+                    href="./images/sprites.svg#icon-instagram"
+                    width="20px"
+                    height="20px"
+                  ></use></svg
+              ></a>
             </li>
-            <li>
-              <a href="mailto:info@example.com" class="footer-address-link">info@example.com</a>
+            <li class="footer-icon-item">
+              <a href="https://twitter.com/" class="footer-link">
+                <svg class="icon footer-icon">
+                  <use
+                    href="./images/sprites.svg#icon-twitter"
+                    width="20px"
+                    height="20px"
+                  ></use></svg
+              ></a>
             </li>
-            <li><a href="tel:+380961111111" class="footer-address-link">+38 096 111 11 11</a></li>
+            <li class="footer-icon-item">
+              <a href="https://www.facebook.com/" class="footer-link">
+                <svg class="icon footer-icon">
+                  <use
+                    href="./images/sprites.svg#icon-facebook"
+                    width="20px"
+                    height="20px"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="footer-icon-item">
+              <a href="https://linkedin.com/" class="footer-link">
+                <svg class="icon footer-icon">
+                  <use
+                    href="./images/sprites.svg#icon-linkedin"
+                    width="20px"
+                    height="20px"
+                  ></use></svg
+              ></a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

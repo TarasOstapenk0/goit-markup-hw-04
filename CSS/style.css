@@ -13,6 +13,7 @@
   --heder-line: #ececec;
   --social-link: #afb1b8;
   --clients-link: #afb1b8;
+  --footer-social: #ffffff;
 }
 p,
 h1,
@@ -280,7 +281,7 @@ body {
 .team-member {
   background: var(--contrast-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 2px 1px rgba(156, 138, 138, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .team-member > img {
@@ -398,7 +399,12 @@ body {
   background-color: var(--footer-background-color);
   padding: 60px 0;
 }
-
+.footer-content {
+  display: flex;
+}
+.footer-address {
+  margin-right: 70px;
+}
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -416,11 +422,11 @@ body {
 .footer-list {
   margin-top: 20px;
 }
-.footer-address {
+.footer-address-list {
   list-style-type: none;
   font-style: normal;
 }
-.footer-address > li {
+.footer-address-list > li {
   margin-bottom: 9px;
 }
 .footer-address-map {
@@ -448,6 +454,54 @@ body {
 .footer-address-link:focus,
 .footer-address-link:hover {
   color: var(--hover-color);
+}
+/* .footer-social {
+  margin-left: 70px;
+} */
+.invite {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--contrast-color);
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-icon-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.footer-icon-item:first-child {
+  margin-left: 0;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--hover-color);
+}
+.footer-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: var(--footer-social);
+}
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--hover-color);
 }
 
 .portfolio-list {
@@ -499,6 +553,10 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.portfolio-pojects-item:hover,
+.portfolio-pojects-item:focus {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .portfolio-project {
   border: 1px solid #eeeeee;
