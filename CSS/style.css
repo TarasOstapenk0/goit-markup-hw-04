@@ -565,7 +565,6 @@ body {
 }
 .portfolio-pojects-item {
   background-color: var(--contrast-color);
-  cursor: auto;
   text-decoration: none;
 }
 .portfolio-pojects-item > img {
@@ -574,13 +573,15 @@ body {
   height: auto;
 }
 .portfolio-pojects-item:hover,
-.portfolio-pojects-item:focus-within {
+.portfolio-pojects-item:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .portfolio-pojects-link {
+  text-decoration: none;
+  cursor: auto;
 }
 .portfolio-pojects-link:hover,
-.portfolio-pojects-link:focus-within {
+.portfolio-pojects-link:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .portfolio-project {
